@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+* {
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-size: 18px;
+}
+
+header {
+  background-image: url(../images/mobile/image-header.jpg);
+}
+
+.Learn-More {
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  color: #000000;
+  border-bottom: 4px solid hsl(51deg, 100%, 49%);
+}
+
+.Navbar {
+  position: fixed;
+  background-color: #3ebfff;
+  height: 80px;
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Barlow", sans-serif;
+}
+.Navbar input {
+  display: none;
+}
+.Navbar label {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.6rem;
+}
+.Navbar .Navbar__List {
+  margin: 0 auto;
+  width: 80%;
+  padding: 40px;
+  gap: 20px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  display: none;
+}
+.Navbar .Navbar__List .Navbar__List__Item a {
+  text-decoration: none;
+  color: hsl(213deg, 9%, 39%);
+}
+.Navbar .Navbar__List .White-area {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: -6px;
+  height: 40px;
+  width: 20px;
+  background-color: rgb(255, 255, 255);
+  transform: skewY(-60deg);
+}
+
+#Toggle-Menu:checked + .Navbar__List {
+  display: flex;
+}
+
+.Btn {
+  display: block;
+  text-align: center;
+  width: 100px;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.Btn--Contact {
+  background-color: hsl(51deg, 100%, 49%);
+  font-weight: 700;
+  font-family: "Fraunces", serif;
+}
+
+.Hero {
+  height: calc(100vh - 80px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  background-image: url(../images/mobile/image-header.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  gap: 10px;
+}
+.Hero h1 {
+  font-size: 4rem;
+  color: hsl(0deg, 0%, 100%);
+}
+
+.Transform {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Transform img {
+  width: 100%;
+}
+.Transform .Transform__Content {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.Transform .Transform__Content h2 {
+  font-size: 2rem;
+  font-family: "Fraunces", serif;
+}
+.Transform .Transform__Content p {
+  width: 90%;
+  color: hsl(213deg, 9%, 39%);
+}
+
+.Stand-Out {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Stand-Out img {
+  width: 100%;
+}
+.Stand-Out .Stand-Out__Content {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.Stand-Out .Stand-Out__Content h2 {
+  width: 90%;
+  font-size: 2rem;
+  font-family: "Fraunces", serif;
+}
+.Stand-Out .Stand-Out__Content p {
+  width: 80%;
+  color: hsl(213deg, 9%, 39%);
+}
+.Stand-Out .Stand-Out__Content .Learn-More {
+  border-color: hsl(7deg, 99%, 70%);
+}
+
+.Graphic-Design {
+  margin-top: 90px;
+  background-image: url(../images/mobile/image-graphic-design.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 560px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: end;
+  padding-bottom: 40px;
+  gap: 20px;
+}
+.Graphic-Design h2 {
+  font-family: "Fraunces", serif;
+  color: hsl(167deg, 40%, 24%);
+  font-weight: 900;
+}
+.Graphic-Design p {
+  width: 85%;
+  text-align: center;
+  color: hsl(167deg, 40%, 24%);
+  font-weight: 500;
+  font-family: "Barlow", sans-serif;
+}
+
+.Photography {
+  background-image: url(../images/mobile/image-photography.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 560px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: end;
+  padding-bottom: 40px;
+  gap: 20px;
+}
+.Photography h2 {
+  font-family: "Fraunces", serif;
+  color: hsl(198deg, 62%, 26%);
+  font-weight: 900;
+}
+.Photography p {
+  width: 85%;
+  text-align: center;
+  color: hsl(198deg, 62%, 26%);
+  font-weight: 500;
+  font-family: "Barlow", sans-serif;
+}
+
+.Client-Testimonials {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.Client-Testimonials h3 {
+  font-size: 1.1rem;
+  color: hsl(210deg, 4%, 67%);
+  font-family: "Fraunces", serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.Client-Testimonials .Client-Testimonials__Info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.Client-Testimonials .Client-Testimonials__Info img {
+  height: 60px;
+}
+.Client-Testimonials .Client-Testimonials__Info p {
+  text-align: center;
+  width: 80%;
+  color: hsl(213deg, 9%, 39%);
+  font-family: "Barlow", sans-serif;
+}
+.Client-Testimonials .Client-Testimonials__Info div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+.Client-Testimonials .Client-Testimonials__Info div strong {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+}
+.Client-Testimonials .Client-Testimonials__Info div span {
+  color: hsl(210deg, 4%, 67%);
+  font-family: "Barlow", sans-serif;
+  font-size: 0.9rem;
+}
+
+.space-gap {
+  gap: 60px;
+}
+
+.imgs {
+  margin-top: 120px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-row: auto;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 10px;
+  background-color: hsl(168deg, 34%, 41%);
+  gap: 20px;
+}
+footer .Footer__Title {
+  font-family: "Fraunces", serif;
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+footer .Footer__List {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .Footer__Imgs {
+  display: flex;
+  gap: 30px;
+}
