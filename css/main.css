@@ -32,6 +32,7 @@ header {
   justify-content: space-between;
   align-items: center;
   font-family: "Barlow", sans-serif;
+  z-index: 1;
 }
 .Navbar input {
   display: none;
@@ -105,8 +106,20 @@ header {
   gap: 10px;
 }
 .Hero h1 {
+  opacity: 0;
   font-size: 4rem;
   color: hsl(0deg, 0%, 100%);
+  -webkit-animation: slide-up 1s ease-in forwards;
+          animation: slide-up 1s ease-in forwards;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.Hero img {
+  opacity: 0;
+  -webkit-animation: slide-up 1s ease-in forwards;
+          animation: slide-up 1s ease-in forwards;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 
 .Transform {
@@ -307,4 +320,26 @@ footer .Footer__List {
 footer .Footer__Imgs {
   display: flex;
   gap: 30px;
+}
+
+@-webkit-keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
